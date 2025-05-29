@@ -1,0 +1,15 @@
+{
+    "name": "gustavodias/desafiogessuas",
+    "autoload": {
+        "psr-4": {
+            "Gustavodias\\Desafiogessuas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GustavoDias496",
+            "email": "gustavodias4966abcd@gmail.com"
+        }
+    ],
+    "require": {}
+}
