@@ -1,6 +1,6 @@
 <?php
 
-namespace Gustavodias\controller\PeopleController;
+namespace Gustavodias\Desafiogessuas\controller;
 
 use Gustavodias\Desafiogessuas\models\People;
 use Gustavodias\Desafiogessuas\services\NisGenerator;
