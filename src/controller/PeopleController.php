@@ -1,0 +1,31 @@
+<?php
+
+namespace Gustavodias\controller\PeopleController;
+
+use Gustavodias\Desafiogessuas\models\People;
+use Gustavodias\Desafiogessuas\services\NisGenerator;
+use Gustavodias\Desafiogessuas\repositories\PeopleRepository;
+
+class PeopleController {
+    private $repository;
+
+    public function __construct() {
+        $this->repository = new PeopleRepository();
+    }
+
+    public function register(string $name): People {
+        $nis = NisGenerator::generate();
+
+        $person = new People();
+        $person->setName($name);
+        $person->setNis($nis);
+
+        $this->repository->registerPeople($person);
+
+        return $person;
+    }
+
+    public function findByNis(string $nis): People {
+        return $this->repository->findByNis($nis);
+    }
+}
