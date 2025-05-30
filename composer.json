@@ -1,5 +1,5 @@
 {
-    "name": "gustavodias/desafiogessuas",
+    "name": "gustavodias/desafiogesuas",
     "autoload": {
         "psr-4": {
             "Gustavodias\\Desafiogesuas\\": "src/"
