@@ -30,6 +30,8 @@ Um sistema PHP para cadastro de cidadãos com geração automática de NIS (Núm
 git clone [URL_DO_REPOSITORIO]
 cd desafiogessuas
 ```
+Agora dentro do diretório do projeto
+
 2. Instale as dependências:
 ```bash
 composer install
