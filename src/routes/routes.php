@@ -25,7 +25,7 @@ function handleRegister($controller, string $name): array
     $person = $controller->register($name);
     return [
         'title' => 'Cadastro realizado!',
-        'message' => 'Pessoa cadastrada com sucesso!',
+        'message' => 'Cidadão cadastrado com sucesso!',
         'person' => $person
     ];
 }
@@ -34,8 +34,8 @@ function handleSearch(PeopleController $controller, string $nis): array
 {
     $person = $controller->findByNis($nis);
     return [
-        'title' => $person ? 'Pessoa encontrada' : 'Cidadão não encontrado',
-        'message' => $person ? 'Pessoa encontrada com sucesso!' : 'Cidadão não encontrada!',
+        'title' => $person ? 'Cidadão encontrado' : 'Cidadão não encontrado',
+        'message' => $person ? 'Cidadão encontrado com sucesso!' : 'Cidadão não encontrada!',
         'person' => $person
     ];
 }
