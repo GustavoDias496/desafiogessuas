@@ -9,8 +9,8 @@ use Gustavodias\Desafiogessuas\repositories\PeopleRepository;
 class PeopleController {
     private $repository;
 
-    public function __construct() {
-        $this->repository = new PeopleRepository();
+    public function __construct(PeopleRepository $repository = null) {
+        $this->repository = $repository ?: new PeopleRepository();
     }
 
     public function register(string $name): People {

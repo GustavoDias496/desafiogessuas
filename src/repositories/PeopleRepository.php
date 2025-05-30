@@ -8,13 +8,13 @@ use Gustavodias\Desafiogessuas\models\People;
 class PeopleRepository {
     private $conn;
 
-    public function __construct() {
-        $this->conn = Database::getInstance();
+    public function __construct(\PDO $conn = null) {
+        $this->conn = $conn ?: Database::getInstance();
     }
 
-    public function registerPeople(People $person): void {
+    public function registerPeople(People $person): bool {
         $stmt = $this->conn->prepare("INSERT INTO people (name, nis) VALUES (:name, :nis)");
-        $stmt->execute([
+        return $stmt->execute([
             'name' => $person->getName(),
             'nis' => $person->getNis()
         ]);
