@@ -8,7 +8,7 @@ use Gustavodias\Desafiogessuas\models\People;
 class PeopleRepository {
     private $conn;
 
-    public function __construct(\PDO $conn = null) {
+    public function __construct(?\PDO $conn = null) {
         $this->conn = $conn ?: Database::getInstance();
     }
 

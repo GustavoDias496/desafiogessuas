@@ -9,7 +9,7 @@ use Gustavodias\Desafiogessuas\repositories\PeopleRepository;
 class PeopleController {
     private $repository;
 
-    public function __construct(PeopleRepository $repository = null) {
+    public function __construct(?PeopleRepository $repository = null) {
         $this->repository = $repository ?: new PeopleRepository();
     }
 
