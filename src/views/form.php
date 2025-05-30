@@ -15,4 +15,3 @@
         <button class="button" type="submit">Buscar</button>
     </form>
 </div>
-

@@ -2,32 +2,39 @@
 
 namespace Gustavodias\Desafiogessuas\models;
 
-class People {
+class People
+{
     private int $id;
     private string $name;
     private string $nis;
 
-    public function getId(): int {
+    public function getId(): int
+    {
         return $this->id;
     }
 
-    public function setId(int $id): void {
+    public function setId(int $id): void
+    {
         $this->id = $id;
     }
 
-    public function getName(): string {
+    public function getName(): string
+    {
         return $this->name;
     }
 
-    public function setName(string $name): void {
+    public function setName(string $name): void
+    {
         $this->name = $name;
     }
 
-    public function getNis(): string {
+    public function getNis(): string
+    {
         return $this->nis;
     }
 
-    public function setNis(string $nis): void {
+    public function setNis(string $nis): void
+    {
         $this->nis = $nis;
     }
 

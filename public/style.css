@@ -52,6 +52,7 @@ h1{
     padding: 5px;
     border-radius: 3px;
     margin-top: 15px;
+    border: none;
 }
 
 .button:hover{

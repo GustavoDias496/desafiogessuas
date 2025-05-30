@@ -7,12 +7,14 @@ use Gustavodias\Desafiogessuas\services\NisGenerator;
 
 class NisGeneratorTest extends TestCase
 {
-    public function testNisLength(){
+    public function testNisLength()
+    {
         $nis = NisGenerator::generate();
-        $this->assertEquals(11,strlen($nis));
+        $this->assertEquals(11, strlen($nis));
     }
 
-    public function testGenerateReturnsOnlyNumbers(){
+    public function testGenerateReturnsOnlyNumbers()
+    {
         $nis = NisGenerator::generate();
         $this->assertMatchesRegularExpression('/^\d+$/', $nis);
     }

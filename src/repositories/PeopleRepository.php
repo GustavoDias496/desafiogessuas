@@ -5,14 +5,17 @@ namespace Gustavodias\Desafiogessuas\repositories;
 use Gustavodias\Desafiogessuas\config\Database;
 use Gustavodias\Desafiogessuas\models\People;
 
-class PeopleRepository {
+class PeopleRepository
+{
     private $conn;
 
-    public function __construct(?\PDO $conn = null) {
+    public function __construct(?\PDO $conn = null)
+    {
         $this->conn = $conn ?: Database::getInstance();
     }
 
-    public function registerPeople(People $person): bool {
+    public function registerPeople(People $person): bool
+    {
         $stmt = $this->conn->prepare("INSERT INTO people (name, nis) VALUES (:name, :nis)");
         return $stmt->execute([
             'name' => $person->getName(),
@@ -20,12 +23,14 @@ class PeopleRepository {
         ]);
     }
 
-    public function findByNis(string $nis): ?People {
+    public function findByNis(string $nis): ?People
+    {
         $stmt = $this->conn->prepare("SELECT * FROM people WHERE nis = :nis");
         $stmt->execute(['nis' => $nis]);
         $data = $stmt->fetch();
 
-        if(!$data) return null;
+        if (!$data)
+            return null;
 
         $person = new People();
         $person->setName($data['name']);

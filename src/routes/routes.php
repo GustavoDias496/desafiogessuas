@@ -20,7 +20,8 @@ if ($method === 'POST' && !empty($_POST['name'])) {
 
 include __DIR__ . '/../views/layout.php';
 
-function handleRegister($controller, string $name): array {
+function handleRegister($controller, string $name): array
+{
     $person = $controller->register($name);
     return [
         'title' => 'Cadastro realizado!',
@@ -29,7 +30,8 @@ function handleRegister($controller, string $name): array {
     ];
 }
 
-function handleSearch(PeopleController $controller, string $nis): array {
+function handleSearch(PeopleController $controller, string $nis): array
+{
     $person = $controller->findByNis($nis);
     return [
         'title' => $person ? 'Pessoa encontrada' : 'Pessoa não encontrada',

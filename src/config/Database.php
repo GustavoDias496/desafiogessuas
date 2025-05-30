@@ -2,11 +2,13 @@
 
 namespace Gustavodias\Desafiogessuas\config;
 
-class Database {
+class Database
+{
     private static $instance = null;
     private $connection;
 
-    private function __construct() {
+    private function __construct()
+    {
         $host = $_ENV['DB_HOST'];
         $dbName = $_ENV['DB_NAME'];
         $userName = $_ENV['DB_USER'];
@@ -20,14 +22,14 @@ class Database {
                 $password
             );
             $this->connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-        }
-        catch(\PDOException $e) {
+        } catch (\PDOException $e) {
             die("Connection failed:" . $e->getMessage());
         }
     }
 
-    public static function getInstance() {  
-        if(!self::$instance){
+    public static function getInstance()
+    {
+        if (!self::$instance) {
             self::$instance = new Database();
         }
         return self::$instance->connection;

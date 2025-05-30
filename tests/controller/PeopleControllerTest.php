@@ -27,7 +27,7 @@ class PeopleControllerTest extends TestCase
             ->willReturn(true);
 
         $person = $this->controller->register($name);
-        
+
         $this->assertInstanceOf(People::class, $person);
         $this->assertEquals($name, $person->getName());
         $this->assertEquals(11, strlen($person->getNis()));
