@@ -3,7 +3,7 @@
 namespace Tests\Services;
 
 use PHPUnit\Framework\TestCase;
-use Gustavodias\Desafiogessuas\services\NisGenerator;
+use Gustavodias\Desafiogesuas\services\NisGenerator;
 
 class NisGeneratorTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Gustavodias\Desafiogessuas\models;
+namespace Gustavodias\Desafiogesuas\models;
 
 class People
 {

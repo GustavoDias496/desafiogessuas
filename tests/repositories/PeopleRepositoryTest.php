@@ -2,8 +2,8 @@
 
 namespace Tests\Repositories;
 
-use Gustavodias\Desafiogessuas\models\People;
-use Gustavodias\Desafiogessuas\repositories\PeopleRepository;
+use Gustavodias\Desafiogesuas\models\People;
+use Gustavodias\Desafiogesuas\repositories\PeopleRepository;
 use PDO;
 use PDOStatement;
 use PHPUnit\Framework\TestCase;

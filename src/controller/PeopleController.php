@@ -1,10 +1,10 @@
 <?php
 
-namespace Gustavodias\Desafiogessuas\controller;
+namespace Gustavodias\Desafiogesuas\controller;
 
-use Gustavodias\Desafiogessuas\models\People;
-use Gustavodias\Desafiogessuas\services\NisGenerator;
-use Gustavodias\Desafiogessuas\repositories\PeopleRepository;
+use Gustavodias\Desafiogesuas\models\People;
+use Gustavodias\Desafiogesuas\services\NisGenerator;
+use Gustavodias\Desafiogesuas\repositories\PeopleRepository;
 
 class PeopleController
 {

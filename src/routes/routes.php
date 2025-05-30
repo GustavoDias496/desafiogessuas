@@ -1,6 +1,6 @@
 <?php
 
-use Gustavodias\Desafiogessuas\controller\PeopleController;
+use Gustavodias\Desafiogesuas\controller\PeopleController;
 
 $controller = new PeopleController();
 

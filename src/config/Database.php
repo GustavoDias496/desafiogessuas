@@ -1,6 +1,6 @@
 <?php
 
-namespace Gustavodias\Desafiogessuas\config;
+namespace Gustavodias\Desafiogesuas\config;
 
 class Database
 {

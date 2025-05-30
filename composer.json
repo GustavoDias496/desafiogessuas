@@ -2,7 +2,7 @@
     "name": "gustavodias/desafiogessuas",
     "autoload": {
         "psr-4": {
-            "Gustavodias\\Desafiogessuas\\": "src/"
+            "Gustavodias\\Desafiogesuas\\": "src/"
         }
     },
     "authors": [

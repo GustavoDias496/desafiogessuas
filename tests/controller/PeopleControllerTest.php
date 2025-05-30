@@ -2,9 +2,9 @@
 
 namespace Tests\Controllers;
 
-use Gustavodias\Desafiogessuas\controller\PeopleController;
-use Gustavodias\Desafiogessuas\models\People;
-use Gustavodias\Desafiogessuas\repositories\PeopleRepository;
+use Gustavodias\Desafiogesuas\controller\PeopleController;
+use Gustavodias\Desafiogesuas\models\People;
+use Gustavodias\Desafiogesuas\repositories\PeopleRepository;
 use PHPUnit\Framework\TestCase;
 
 class PeopleControllerTest extends TestCase

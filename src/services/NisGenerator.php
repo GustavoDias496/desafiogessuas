@@ -1,6 +1,6 @@
 <?php
 
-namespace Gustavodias\Desafiogessuas\services;
+namespace Gustavodias\Desafiogesuas\services;
 
 class NisGenerator
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Gustavodias\Desafiogessuas\repositories;
+namespace Gustavodias\Desafiogesuas\repositories;
 
-use Gustavodias\Desafiogessuas\config\Database;
-use Gustavodias\Desafiogessuas\models\People;
+use Gustavodias\Desafiogesuas\config\Database;
+use Gustavodias\Desafiogesuas\models\People;
 
 class PeopleRepository
 {
