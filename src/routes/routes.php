@@ -34,8 +34,8 @@ function handleSearch(PeopleController $controller, string $nis): array
 {
     $person = $controller->findByNis($nis);
     return [
-        'title' => $person ? 'Pessoa encontrada' : 'Pessoa não encontrada',
-        'message' => $person ? 'Pessoa encontrada com sucesso!' : 'Pessoa não encontrada!',
+        'title' => $person ? 'Pessoa encontrada' : 'Cidadão não encontrado',
+        'message' => $person ? 'Pessoa encontrada com sucesso!' : 'Cidadão não encontrada!',
         'person' => $person
     ];
 }
