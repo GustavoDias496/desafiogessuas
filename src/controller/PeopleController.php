@@ -25,7 +25,7 @@ class PeopleController {
         return $person;
     }
 
-    public function findByNis(string $nis): People {
+    public function findByNis(string $nis): ?People {
         $person = $this->repository->findByNis($nis);
 
         return $person ?:null;

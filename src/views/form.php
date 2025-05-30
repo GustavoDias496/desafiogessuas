@@ -10,7 +10,7 @@
     <form class="form" method="GET" action="index.php">
         <div class="inputContainer">
             <label for="nis">Buscar por NIS:</label>
-            <input class="input" type="text" placeholder="Digite o número NIS" name="nis" required />
+            <input class="input" type="number" placeholder="Digite o número NIS" name="nis" required />
         </div>
         <button class="button" type="submit">Buscar</button>
     </form>
