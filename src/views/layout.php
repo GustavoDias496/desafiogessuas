@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-
     <h1><?= $data['title'] ?? 'Cadastro de Cidadão' ?></h1>
-
-    <?php include $view; ?>
-
+    <div class="content">
+        <?php include $view; ?>
+    </div>
 </body>
 </html>
